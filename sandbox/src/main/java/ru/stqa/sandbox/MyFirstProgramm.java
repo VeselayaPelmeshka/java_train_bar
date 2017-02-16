@@ -1,4 +1,6 @@
-public class programm{
+package ru.stqa.sandbox;
+
+public class MyFirstProgramm {
 	public static void main (String [] args){
 	
 	System.out.println("Hello world");
