@@ -4,8 +4,14 @@ public class MyFirstProgramm {
 
 	public static void main (String[] args){
 		hello("Danil");
-		System.out.println(area(9));
-		System.out.println(area(4,7));
+
+		Square s = new Square(8);
+
+		System.out.println(area(s));
+
+		Rectangle f = new Rectangle(1,9);
+
+		System.out.println(area(f));
 
 	}
 
@@ -14,12 +20,12 @@ public class MyFirstProgramm {
 		System.out.println("Hello " + somebody + " !");
 	}
 
-	public  static  double area(double n){
-		return n*n;
+	public  static  double area(Square s){
+		return s.l*s.l;
 	}
 
-	public  static double area(double a, double b){
-		return a*b;
+	public  static double area(Rectangle f){
+		return f.a * f.b;
 	}
 
 }
